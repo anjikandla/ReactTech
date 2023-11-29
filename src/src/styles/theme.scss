@@ -1,0 +1,16 @@
+$primaryClr: #ae3965;
+$secondaryClr: #C6C6C6;
+$theme-colors: (
+    "primary": $primaryClr,
+    "secondary": $secondaryClr,
+    "danger": #BC3D39
+);
+@import '~bootstrap/scss/bootstrap.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+$black: #000;
+$color_2: #EB4F26;
+$white: #FFF;
+$background-color_1: #FC563B;
+$background-color_2: #F22F26;
+$white: #FFF;
