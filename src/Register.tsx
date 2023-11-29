@@ -36,15 +36,8 @@ const Register = () => {
         email: "",
         phone: "",
         password: ""
-    })
+    });
     const formValid = () => {
-        let Errors = {
-            firstname: "",
-            lastname: "",
-            email: "",
-            phone: "",
-            password: ""
-        }
         let valid;
         Object.entries(formData).filter((val) => {
             let [key, value] = val;
@@ -53,9 +46,7 @@ const Register = () => {
                 for(let [k,v] of Object.entries(ErrorData)){
                     if(key === k){
                         console.log(k,v)
-                        SetFormError({...formError,[k]:v});
-                        //Errors[k] = v;
-                        //console.log(formError);
+                        //SetFormError({[k]:v,})
                     }
                 }
                 //console.log(key, val);
@@ -63,18 +54,6 @@ const Register = () => {
         })
         
         console.log("Empty:", formError);
-        //console.log(Object.keys(formData));
-        // for (let [key, value] of Object.entries(formData)) {
-        //     console.log(key, value);
-        //     if(!value.trim()){
-        //         console.log("form invalid");
-        //         SetFormError({...formError, [key]:value})
-        //         valid = false;
-        //     }else{
-        //         console.log("form valid");
-        //     }
-
-        // }
 
         return valid;
     }
