@@ -15,10 +15,9 @@ import Register from './Register';
 
 function App() {
   return (
-    <div className="container-fluid" style={{height:"100vh"}}>
+    <div className="container-fluid p-0" style={{height:"100vh"}}>
       {/* <Fetch/> */}
-        
-      <Register/>
+      <AppRoutes/>
     </div>
   );
 }

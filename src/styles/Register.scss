@@ -16,6 +16,7 @@
 	box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.54);
     display: flex;
     align-items: center;
+	position: relative;
     >div{
         width: 50%;
     }
@@ -40,6 +41,20 @@
 .login_control {
 	background-color: $white;
 	padding: 10px;
+	.control{
+		position: relative;
+		.ValidFormIcon{
+			position: absolute;
+			right: 0;
+			bottom: 5px;
+			color: rgb(17, 182, 63);
+			font-size: 20px;
+		}
+		.FormErrorMsg{
+			color: $color_2;
+			font-size: 12px;
+		}
+	}
 }
 
 

@@ -1,5 +1,6 @@
 $primaryClr: #ae3965;
 $secondaryClr: #C6C6C6;
+
 $theme-colors: (
     "primary": $primaryClr,
     "secondary": $secondaryClr,
@@ -14,3 +15,7 @@ $white: #FFF;
 $background-color_1: #FC563B;
 $background-color_2: #F22F26;
 $white: #FFF;
+
+.bg-primary{
+    background-color:$primaryClr ;
+}
